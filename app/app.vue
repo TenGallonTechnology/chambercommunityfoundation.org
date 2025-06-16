@@ -1,51 +1,72 @@
-<script setup>
+<script setup lang="ts">
 useHead({
-  meta: [
-    { name: 'viewport', content: 'width=device-width, initial-scale=1' }
-  ],
-  link: [
-    { rel: 'icon', href: '/favicon.ico' }
-  ],
+  meta: [{ name: 'viewport', content: 'width=device-width, initial-scale=1' }],
+  link: [{ rel: 'icon', href: '/favicon.ico' }],
   htmlAttrs: {
     lang: 'en'
   }
 })
 
-const title = 'Nuxt Starter Template'
-const description = 'Nuxt UI Pro is a collection of premium Vue components built on top of Nuxt UI to create beautiful & responsive Nuxt applications in minutes.'
+const title = 'Dublin-Laurens County Chamber Community Foundation'
+const description = 'Uniting community leaders to build a stronger future through childcare, education, and workforce solutions.'
 
 useSeoMeta({
   title,
   description,
   ogTitle: title,
   ogDescription: description,
-  ogImage: 'https://assets.hub.nuxt.com/eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJodHRwczovL3VpLXByby1zdGFydGVyLm51eHQuZGV2IiwiaWF0IjoxNzM5NDYzMzk4fQ.XLzPkSW6nRbPW07QO1RkMwz_RAPA4KfeyrWrK3li9YI.jpg?theme=light',
-  twitterImage: 'https://assets.hub.nuxt.com/eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJodHRwczovL3VpLXByby1zdGFydGVyLm51eHQuZGV2IiwiaWF0IjoxNzM5NDYzMzk4fQ.XLzPkSW6nRbPW07QO1RkMwz_RAPA4KfeyrWrK3li9YI.jpg?theme=light',
+  ogImage: '/1.png',
+  twitterImage: '/1.png',
   twitterCard: 'summary_large_image'
 })
+
+const route = useRoute()
+const items = computed(() => [
+  {
+    label: 'About',
+    to: '/#about',
+    active: route.path.startsWith('/#about')
+  },
+  {
+    label: 'Childcare',
+    to: '/#childcare',
+    active: route.path.startsWith('/#childcare')
+  },
+  {
+    label: 'Donate',
+    to: '/#donate',
+    active: route.path.startsWith('/#donate')
+  },
+  {
+    label: 'Education',
+    to: '/#education',
+    active: route.path.startsWith('/#education')
+  },
+  {
+    label: 'Workforce',
+    to: '/#workforce',
+    active: route.path.startsWith('/#workforce')
+  }
+])
 </script>
 
 <template>
   <UApp>
-    <UHeader>
-      <template #left>
-        <NuxtLink to="/">
-          <LogoPro class="w-auto h-6 shrink-0" />
-        </NuxtLink>
-
-        <TemplateMenu />
+    <UHeader mode="drawer">
+      <template #title>
+        <img
+          src="/2-transparent.png"
+          class="w-auto h-15 shrink-0"
+        >
       </template>
-
-      <template #right>
-        <UColorModeButton />
-
-        <UButton
-          to="https://github.com/nuxt-ui-pro/starter"
-          target="_blank"
-          icon="i-simple-icons-github"
-          aria-label="GitHub"
-          color="neutral"
-          variant="ghost"
+      <UNavigationMenu
+        :items="items"
+      />
+      <template #body>
+        <UNavigationMenu
+          :items="items"
+          orientation="vertical"
+          class="-mx-2.5"
         />
       </template>
     </UHeader>
@@ -54,7 +75,7 @@ useSeoMeta({
       <NuxtPage />
     </UMain>
 
-    <USeparator icon="i-simple-icons-nuxtdotjs" />
+    <USeparator />
 
     <UFooter>
       <template #left>
@@ -65,10 +86,15 @@ useSeoMeta({
 
       <template #right>
         <UButton
-          to="https://github.com/nuxt-ui-pro/starter"
+          to="https://tengallon.tech"
           target="_blank"
-          icon="i-simple-icons-github"
-          aria-label="GitHub"
+          :ui="{
+            leadingAvatarSize: 'lg'
+          }"
+          :avatar="{
+            src: 'https://raw.githubusercontent.com/TenGallonTechnology/images/refs/heads/main/tenGallonSolid.png'
+          }"
+
           color="neutral"
           variant="ghost"
         />
