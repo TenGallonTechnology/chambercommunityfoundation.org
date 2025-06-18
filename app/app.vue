@@ -25,27 +25,32 @@ const items = computed(() => [
   {
     label: 'About',
     to: '/#about',
-    active: route.path.startsWith('/#about')
+    active: route.path.includes('/#about')
+  },
+  {
+    label: 'Board Members',
+    to: '/#board-members',
+    active: route.path.includes('/#board-members')
   },
   {
     label: 'Childcare',
     to: '/#childcare',
-    active: route.path.startsWith('/#childcare')
+    active: route.path.includes('/#childcare')
   },
   {
     label: 'Donate',
     to: '/#donate',
-    active: route.path.startsWith('/#donate')
+    active: route.path.includes('/#donate')
   },
   {
     label: 'Education',
     to: '/#education',
-    active: route.path.startsWith('/#education')
+    active: route.path.includes('/#education')
   },
   {
     label: 'Workforce',
     to: '/#workforce',
-    active: route.path.startsWith('/#workforce')
+    active: route.path.includes('/#workforce')
   }
 ])
 </script>
