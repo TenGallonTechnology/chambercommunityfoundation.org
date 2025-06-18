@@ -73,10 +73,11 @@ const boardMembers = [
 <template>
   <UPageSection
     id="board-members"
+    orientation="horizontal"
     title="Board Members"
     description="The Dublin-Laurens County Chamber Community Foundation is led by a dedicated board of community members who are committed to the foundation's mission and vision."
   >
-    <div class="grid grid-cols-2 sm:grid-cols-3  md:grid-cols-4 gap-6 ">
+    <div class="grid grid-cols-2 sm:grid-cols-3 gap-6 ">
       <BoardMemberCard
         v-for="member in boardMembers"
         :key="member.name"
