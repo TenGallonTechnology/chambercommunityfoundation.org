@@ -8,7 +8,7 @@ const boardMembers = [
     title: 'Director'
   },
   {
-    src: '/board/joey-barrett.jpg',
+    src: '/board/joey-barrett.png',
     name: 'Joey Barrett',
     title: 'Chair'
   },
@@ -63,7 +63,7 @@ const boardMembers = [
     title: ''
   },
   {
-    src: '/board/ronda-walker.jpg',
+    src: '/board/ronda-walker.png',
     name: 'Ronda Walker',
     title: ''
   }
