@@ -48,11 +48,6 @@ const boardMembers = [
     title: ''
   },
   {
-    src: '/board/phil-patel.jpg',
-    name: 'Phil Patel',
-    title: ''
-  },
-  {
     src: '/board/heath-taylor.jpg',
     name: 'Heath Taylor',
     title: ''
