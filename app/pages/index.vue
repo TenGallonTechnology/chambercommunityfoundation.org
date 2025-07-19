@@ -6,10 +6,16 @@ import FlexLogoLink from '~/components/FlexLogoLink.vue'
 <template>
   <div>
     <UPageHero
-      title="Dublin-Laurens County Chamber Community Foundation"
+      reverse
       description="Uniting community leaders to build a stronger future through childcare, education, and workforce solutions."
-      class="bg-linear-to-t from-white to-primary-50"
-    />
+      class="bg-linear-to-t from-white to-primary-50 items-center "
+    >
+      <img
+        src="/1-transparent.png"
+        alt="Dublin-Laurens County Chamber Community Foundation"
+        class="h-50 w-auto mx-auto"
+      >
+    </UPageHero>
 
     <UPageSection
       id="about"
@@ -56,16 +62,26 @@ import FlexLogoLink from '~/components/FlexLogoLink.vue'
         volunteers for local literacy projects: Read to Lead and Literacy in
         Laurens.
         <UPageLogos>
-          <img
-            src="/RtoL.png"
-            alt="Read to Lead"
-            class="h-20 w-auto"
+          <a
+            href="https://www.facebook.com/p/READ-to-LEAD-61557373647590/"
+            target="_blank"
+            rel="noopener noreferrer"
           >
-          <img
+            <img
+              src="/RtoL.png"
+              alt="Read to Lead"
+              class="h-20 w-auto"
+            >
+          </a>
+          <a
+            href="https://www.facebook.com/p/Literacy-in-Laurens-100087617144636/"
+            target="_blank"
+            rel="noopener noreferrer"
+          ><img
             src="/literacy-in-laurens.png"
             alt="Literacy in Laurens"
             class="h-20 w-auto"
-          >
+          ></a>
         </UPageLogos>
 
         <p class="mt-4">
