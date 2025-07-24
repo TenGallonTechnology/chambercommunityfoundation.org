@@ -13,7 +13,7 @@ import FlexLogoLink from '~/components/FlexLogoLink.vue'
       <img
         src="/1-transparent.png"
         alt="Dublin-Laurens County Chamber Community Foundation"
-        class="h-50 w-auto mx-auto"
+        class="h-30 md:h-50 w-auto mx-auto"
       >
     </UPageHero>
 
