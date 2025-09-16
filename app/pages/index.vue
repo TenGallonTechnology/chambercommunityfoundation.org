@@ -1,6 +1,15 @@
 <script setup lang="ts">
 import BoardMembers from '~/components/BoardMembers.vue'
 import FlexLogoLink from '~/components/FlexLogoLink.vue'
+
+useHead({
+  script: [
+    {
+      src: 'https://widgets.givebutter.com/latest.umd.cjs?acct=Yd0OizzUIrmzC3OR&p=other',
+      defer: true
+    }
+  ]
+})
 </script>
 
 <template>
@@ -95,6 +104,29 @@ import FlexLogoLink from '~/components/FlexLogoLink.vue'
           proceed to the state competition, where the state winner receives
           $10,000 cash!
         </p>
+        <p class="mt-2">
+          Laurens County FLEX Student Application Deadline is <b>October 14, 2025.</b> <UButton
+            href="https://form.jotform.com/252535121197151"
+            target="_blank"
+            rel="noopener noreferrer"
+            variant="subtle"
+            icon="i-lucide-send"
+          >
+            Submit your application here
+          </UButton>
+          <!-- Download file from /flex-student-application -->
+          Download the application here:
+          <UButton
+            href="/flex-student-application.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            variant="subtle"
+            icon="i-lucide-file-text"
+            class="mt-1"
+          >
+            FLEX Student Application (PDF)
+          </UButton>
+        </p>
       </template>
     </UPageSection>
 
@@ -123,10 +155,19 @@ import FlexLogoLink from '~/components/FlexLogoLink.vue'
     <UPageSection id="donate">
       <UPageCTA
         title="Donate"
-        description="Dublin-Laurens County Chamber Community is a 501c3 non-profit. Your tax-deductible donation to the Foundation can be mailed to:"
+        description="Dublin-Laurens County Chamber Community is a 501c3 non-profit. "
         variant="subtle"
       >
-        <span class="text-primary text-center mt-0">1200 Bellevue Ave, Dublin, GA 31021</span>
+        <span class="text-primary text-center mt-0">Your tax-deductible donation to the Foundation can be mailed to: 1200 Bellevue Ave, Dublin, GA 31021</span>
+
+        <!-- Givebutter Donation Widget -->
+        <div
+          class="givebutter-widget"
+          data-gb-widget
+          data-url="https://givebutter.com/Yd0OizzUIrmzC3OR"
+          data-platform="other"
+        />
+
         Contact us
         <UButton
           href="mailto:info@chambercommunityfoundation.org"
