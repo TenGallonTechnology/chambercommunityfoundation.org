@@ -114,6 +114,8 @@ useHead({
           >
             Submit your application here
           </UButton>
+          </p>
+          <p class="mt-0">
           <!-- Download file from /flex-student-application -->
           Download the application here:
           <UButton
