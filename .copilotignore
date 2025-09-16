@@ -1,0 +1,48 @@
+# Dependencies
+node_modules/
+pnpm-lock.yaml
+package-lock.json
+yarn.lock
+
+# Build outputs
+.nuxt/
+.nitro/
+.output/
+dist/
+build/
+
+# Environment files
+.env
+.env.local
+.env.production
+
+# Logs
+*.log
+logs/
+
+# Cache directories
+.cache/
+.temp/
+.tmp/
+
+# IDE files
+.vscode/launch.json
+.vscode/tasks.json
+.vscode/extensions.json
+.idea/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Assets that don't need context
+*.png
+*.jpg
+*.jpeg
+*.gif
+*.svg
+*.ico
+*.pdf
+
+# Config files that are mostly boilerplate
+renovate.json

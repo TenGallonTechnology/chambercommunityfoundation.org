@@ -1,8 +1,27 @@
 {
-    "editor.defaultFormatter": "dbaeumer.vscode-eslint",
-    "cSpell.words": [
-        "Laurens",
-        "lucide",
-        "Nuxt"
-    ]
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "typescript.preferences.includePackageJsonAutoImports": "auto",
+  "typescript.suggest.autoImports": true,
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "explicit"
+  },
+  "files.associations": {
+    "*.vue": "vue"
+  },
+  "emmet.includeLanguages": {
+    "vue": "html",
+    "vue-html": "html"
+  },
+  "github.copilot.enable": {
+    "*": true,
+    "vue": true,
+    "typescript": true,
+    "javascript": true,
+    "markdown": true
+  },
+  "github.copilot.advanced": {
+    "debug.overrideEngine": "copilot-codex",
+    "debug.useNodeFetcher": true
+  },
 }

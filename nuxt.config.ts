@@ -4,6 +4,12 @@ export default defineNuxtConfig({
   devtools: {
     enabled: true
   },
+  vue: {
+    compilerOptions: {
+      // Treat external Givebutter web component as a custom element so Vue doesn't warn
+      isCustomElement: (tag) => ['givebutter-widget'].includes(tag)
+    }
+  },
 
   css: ['~/assets/css/main.css'],
   ui: {

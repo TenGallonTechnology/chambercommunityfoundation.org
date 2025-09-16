@@ -161,12 +161,7 @@ useHead({
         <span class="text-primary text-center mt-0">Your tax-deductible donation to the Foundation can be mailed to: 1200 Bellevue Ave, Dublin, GA 31021</span>
 
         <!-- Givebutter Donation Widget -->
-        <div
-          class="givebutter-widget"
-          data-gb-widget
-          data-url="https://givebutter.com/Yd0OizzUIrmzC3OR"
-          data-platform="other"
-        />
+        <givebutter-widget id="L07Zyj" class="mx-auto"></givebutter-widget>
 
         Contact us
         <UButton
