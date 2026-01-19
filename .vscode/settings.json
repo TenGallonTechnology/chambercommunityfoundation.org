@@ -1,5 +1,5 @@
 {
-  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.defaultFormatter": "dbaeumer.vscode-eslint",
   "typescript.preferences.includePackageJsonAutoImports": "auto",
   "typescript.suggest.autoImports": true,
   "typescript.updateImportsOnFileMove.enabled": "always",
@@ -24,4 +24,11 @@
     "debug.overrideEngine": "copilot-codex",
     "debug.useNodeFetcher": true
   },
+  "cSpell.words": [
+    "Givebutter",
+    "Laurens",
+    "lucide",
+    "mechatronics",
+    "OFTC"
+  ]
 }

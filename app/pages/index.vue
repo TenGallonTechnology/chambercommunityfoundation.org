@@ -17,7 +17,7 @@ useHead({
     <UPageHero
       reverse
       description="Uniting community leaders to build a stronger future through childcare, education, and workforce solutions."
-      class="bg-linear-to-t from-white to-primary-50 items-center "
+      class="bg-linear-to-t from-white to-primary-50 items-center"
     >
       <img
         src="/1-transparent.png"
@@ -50,7 +50,18 @@ useHead({
             'By fostering workforce development, we create opportunities for all residents to succeed in a changing economy.'
         }
       ]"
-    />
+    >
+      <UButton
+        href="/2025Report.pdf"
+        target="_blank"
+        rel="noopener noreferrer"
+        variant="subtle"
+        icon="i-lucide-file-text"
+        class="mt-1"
+      >
+        Download The 2025 Annual Report
+      </UButton>
+    </UPageSection>
 
     <BoardMembers />
 
@@ -95,17 +106,18 @@ useHead({
 
         <p class="mt-4">
           The Foundation is proud to announce that Laurens County will be a
-          2025-2025 <FlexLogoLink /> Community.
-          The Foundational Leadership and Entrepreneurship Experience (FLEX) is
-          an entrepreneurship program for any Laurens County high school
-          student. Students create and run their own businesses while
-          participating in local workshops and mentorship, culminating in a
-          Shark Tank style business pitch competition. Our local winner will
-          proceed to the state competition, where the state winner receives
-          $10,000 cash!
+          2025-2025 <FlexLogoLink /> Community. The Foundational Leadership and
+          Entrepreneurship Experience (FLEX) is an entrepreneurship program for
+          any Laurens County high school student. Students create and run their
+          own businesses while participating in local workshops and mentorship,
+          culminating in a Shark Tank style business pitch competition. Our
+          local winner will proceed to the state competition, where the state
+          winner receives $10,000 cash!
         </p>
         <p class="mt-2">
-          Laurens County FLEX Student Application Deadline is <b>October 14, 2025.</b> <UButton
+          Laurens County FLEX Student Application Deadline is
+          <b>October 14, 2025.</b>
+          <UButton
             href="https://form.jotform.com/252535121197151"
             target="_blank"
             rel="noopener noreferrer"
@@ -114,8 +126,8 @@ useHead({
           >
             Submit your application here
           </UButton>
-          </p>
-          <p class="mt-0">
+        </p>
+        <p class="mt-0">
           <!-- Download file from /flex-student-application -->
           Download the application here:
           <UButton
@@ -160,10 +172,14 @@ useHead({
         description="Dublin-Laurens County Chamber Community is a 501c3 non-profit. "
         variant="subtle"
       >
-        <span class="text-primary text-center mt-0">Your tax-deductible donation to the Foundation can be mailed to: 1200 Bellevue Ave, Dublin, GA 31021</span>
+        <span class="text-primary text-center mt-0">Your tax-deductible donation to the Foundation can be mailed to: 1200
+          Bellevue Ave, Dublin, GA 31021</span>
 
         <!-- Givebutter Donation Widget -->
-        <givebutter-widget id="L07Zyj" class="mx-auto"></givebutter-widget>
+        <givebutter-widget
+          id="L07Zyj"
+          class="mx-auto"
+        />
 
         Contact us
         <UButton
