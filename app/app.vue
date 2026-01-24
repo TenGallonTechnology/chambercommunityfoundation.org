@@ -8,7 +8,8 @@ useHead({
 })
 
 const title = 'Dublin-Laurens County Chamber Community Foundation'
-const description = 'Uniting community leaders to build a stronger future through childcare, education, and workforce solutions.'
+const description
+  = 'Uniting community leaders to build a stronger future through childcare, education, and workforce solutions.'
 
 useSeoMeta({
   title,
@@ -64,9 +65,7 @@ const items = computed(() => [
           class="w-auto h-15 shrink-0"
         >
       </template>
-      <UNavigationMenu
-        :items="items"
-      />
+      <UNavigationMenu :items="items" />
       <template #body>
         <UNavigationMenu
           :items="items"
@@ -91,7 +90,7 @@ const items = computed(() => [
 
       <template #right>
         <UButton
-          to="https://tengallon.tech"
+          to="https://tengallontechnology.com"
           target="_blank"
           :ui="{
             leadingAvatarSize: 'lg'
@@ -99,7 +98,6 @@ const items = computed(() => [
           :avatar="{
             src: 'https://raw.githubusercontent.com/TenGallonTechnology/images/refs/heads/main/tenGallonSolid.png'
           }"
-
           color="neutral"
           variant="ghost"
         />
