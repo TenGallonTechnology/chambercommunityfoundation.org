@@ -9,7 +9,7 @@ const boardMembers = [
   },
   {
     src: '/board/joey-barrett.png',
-    name: 'Joey Barrett',
+    name: 'Joey Barret',
     title: 'Chair'
   },
   {
@@ -23,11 +23,6 @@ const boardMembers = [
     title: 'Treasurer'
   },
   {
-    src: '/board/guy-cochran.jpg',
-    name: 'Guy Cochran',
-    title: ''
-  },
-  {
     src: '/board/lucas-cowart.jpg',
     name: 'Lucas Cowart',
     title: ''
@@ -36,6 +31,11 @@ const boardMembers = [
     src: '/board/will-curry.jpg',
     name: 'Will Curry',
     title: ''
+  },
+  {
+    src: '/board/marcia-dixon.jpg',
+    name: 'Marcia Dixon',
+    title: 'Dublin-Laurens Chamber of Commerce'
   },
   {
     src: '/board/randy-gay.jpg',
@@ -48,9 +48,9 @@ const boardMembers = [
     title: ''
   },
   {
-    src: '/board/heath-taylor.jpg',
-    name: 'Heath Taylor',
-    title: ''
+    src: '/board/michael-maffett.jpg',
+    name: 'Michael Maffett',
+    title: 'Curry-Maffett Insurance'
   },
   {
     src: '/board/randy-thompson.jpg',
