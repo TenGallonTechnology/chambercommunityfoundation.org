@@ -72,11 +72,13 @@ const boardMembers = [
     description="The Dublin-Laurens County Chamber Community Foundation is led by a dedicated board of community members who are committed to the foundation's mission and vision."
   >
     <template #title>
-      <h2 class="text-3xl sm:text-4xl lg:text-5xl text-pretty tracking-tight font-bold text-highlighted text-center lg:text-left">
+      <h2
+        class="text-3xl sm:text-4xl lg:text-5xl text-pretty tracking-tight font-bold text-highlighted text-center lg:text-left"
+      >
         Board Members
       </h2>
     </template>
-    <div class="grid grid-cols-2 sm:grid-cols-3 gap-6 ">
+    <div class="grid grid-cols-2 sm:grid-cols-3 gap-6">
       <BoardMemberCard
         v-for="member in boardMembers"
         :key="member.name"
